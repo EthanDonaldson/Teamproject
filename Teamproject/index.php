@@ -27,11 +27,10 @@ $user_data = check_login($con);
             <li><a href="upload.php">Upload</a></li>
         </ul>
 </nav>
-/*
 <div>
  
  <?php
- $fetchVideos = mysqli_query($con, "SELECT * FROM videos ORDER BY id DESC");
+ $fetchVideos = mysqli_query($con1, "SELECT * FROM videos ORDER BY id DESC");
  while($row = mysqli_fetch_assoc($fetchVideos)){
    $location = $row['location'];
    $name = $row['name'];
@@ -41,9 +40,7 @@ $user_data = check_login($con);
       <span>".$name."</span>
    </div>";
  }
- ?>
-*/
-        
+ ?>        
         <script src="script.js"></script>
     
 </body>
