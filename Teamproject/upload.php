@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include("connections.php");
  
 if(isset($_POST['but_upload'])){
    $maxsize = 5242880; // 5MB
@@ -26,7 +26,7 @@ if(isset($_POST['but_upload'])){
                // Insert record
                $query = "INSERT INTO videos(name,location) VALUES('".$name."','".$target_file."')";
 
-               mysqli_query($con,$query);
+               mysqli_query($con1,$query);
                $_SESSION['message'] = "Upload successfully.";
              }
           }
